@@ -12,7 +12,8 @@ This is a Spring Boot-based project that provides a REST API for managing produc
 ### Steps to Run the Application
 
 1. **Clone the Repository:**
-    ```bash git clone https://github.com/coelhocj/productsapi.git
+    ```bash 
+    git clone https://github.com/coelhocj/productsapi.git
 
 2. **Update application.properties:**
    - Update the database connection details in the application.properties file.
@@ -20,21 +21,22 @@ This is a Spring Boot-based project that provides a REST API for managing produc
    
 3. **Build the Project:**
    - Run the following command in the terminal:
-   ```bash mvn clean install
+   ```bash 
+   mvn clean install
    
 4. **Start the Application:**
-   - Run the following command in the terminal:
-   ```bash java -jar target/demo-0.0.1-SNAPSHOT.jar
+   - Run the project
+
    
 5. **Test the Application:**
-   - Open a web browser and navigate to http://localhost:8080/api/products.
+   - Open a web browser and navigate to http://localhost:8080/api/products/
    - You should see a list of products displayed.
 
 ## Endpoints
 
 The application provides the following endpoints:
 
-### GET /api/products
+### GET /api/products/
 Returns a list of products.
 
 #### Response
