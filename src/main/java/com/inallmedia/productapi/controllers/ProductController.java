@@ -24,4 +24,9 @@ public class ProductController {
     public ResponseEntity<List<String>> sortByPrice() {
         return ResponseEntity.ok(productService.sortByPrice());
     }
+
+    @GetMapping("/")
+    public ResponseEntity<List<String>> getAllProducts() {
+        return ResponseEntity.ok(productService.getAllProducts());
+    }
 }

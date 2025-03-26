@@ -28,5 +28,9 @@ public class ProductService {
                 .sorted((p1, p2) -> Integer.compare(p1.getPrice(), p2.getPrice()))
                 .map(Product::getItem).toList();
     }
+
+    public List<String> getAllProducts(){
+        return productRepository.findAll().stream().map(Product::getItem).toList();
+    }
     
 }

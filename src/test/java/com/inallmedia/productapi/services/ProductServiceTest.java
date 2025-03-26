@@ -73,4 +73,16 @@ class ProductServiceTest {
 
         assertTrue(filteredProducts.isEmpty());
     }
+
+    @Test
+    void shouldReturnAllProducts() {
+        when(productRepository.findAll()).thenReturn(Arrays.asList(product1, product2, product3));
+
+        List<String> allProducts = productService.getAllProducts();
+
+        assertEquals(3, allProducts.size());
+        assertTrue(allProducts.contains("Ball Gown"));
+        assertTrue(allProducts.contains("Shawl"));
+        assertTrue(allProducts.contains("T-Shirt"));
+    }
 }
